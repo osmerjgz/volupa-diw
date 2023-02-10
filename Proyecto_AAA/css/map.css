@@ -1,0 +1,55 @@
+main {
+    padding-bottom: 3rem;
+}
+
+.container {
+    color: black;
+}
+
+.block {
+    background-color: rgb(238, 238, 238);
+    width: 90%;
+    padding-bottom: 1.5rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: -5px 5px 8px 0px black;
+}
+
+section {
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.mapa_image {
+    width: 10rem;
+}
+
+.block_map {
+    width: 65%;
+}
+
+@media screen and (max-width: 640px) {
+    .container img {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .block_map {
+        width: 85%;
+    }
+}
+
+header{
+    position: sticky;
+    background-color: white;
+    top: 0;
+}
