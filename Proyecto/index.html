@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>VOLUPA</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+  .text_slider {
+    position: absolute;
+    top: 18rem;
+    left: 4rem;
+    color: white;
+  }
+
+  .text_slider h1 {
+    margin-top: 0;
+    display: flex;
+    font-size: 4rem;
+    flex-direction: column;
+  }
+
+  .text_slider span {
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 3px solid;
+  }
+
+  .text_slider .boton_naranja {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .text_slider .boton_naranja {
+    padding: 1rem;
+  }
+
+  .text_slider .boton_naranja>img {
+    width: 1rem;
+    flex: 0;
+    height: auto;
+    margin-left: 1.25rem;
+    filter: invert();
+  }
+</style>
+
+<body>
+  <header>
+    <div class="barra_superior">
+      <div class="preferences">
+        <ul>
+          <li>ENG</li>
+          <li>$ USD</li>
+        </ul>
+      </div>
+      <div class="user">
+        <a href="#">
+          <img class="icon" alt="icono wishlist" src="img/icons/user.png">
+          <span>MY ACCOUNT</span>
+        </a>
+        <a href="#">
+          <img class="icon" alt="icono usuario" src="img/icons/bag.png">
+          <span>0 ITEMS</span>
+        </a>
+        <a href="#">
+          <img class="icon" alt="icono bolsa" src="img/icons/wishlist.png">
+          <span>MY WHISLIST</span>
+        </a>
+      </div>
+    </div>
+    <div class="barra_navegacion">
+      <div class="logo">
+        <a href="#"><img src="img/logo.png" class="logo_volupa"></a>
+      </div>
+
+      <nav>
+        <ul class="enlaces">
+          <li>
+            <a href="index.html" class="activo">Home</a>
+          </li>
+          <li>
+            <a href="galeria.html">Gallery</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="mapa.html">Map</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="slider-container">
+        <div class="text_slider">
+          <span> NEW WINTER COLLECTIONS </span>
+          <h1> Women's <strong> Stylis Collection</strong></h1>
+          <button class="boton_naranja">SEE NEW COLLECTION NOW <img src="img/icons/proximo.png"></button>
+        </div>
+        <img class="slider-item" src="img/young-pretty-lady-posing-dark-wall.jpg" alt="mujer rubia sonriente" />
+      </div>
+    </section>
+    <section class="bloque">
+      <div class="grid_departamentos">
+        <div id="woman" class="departamento"
+          style="background-image: url(img/woman_dapartamento.webp); background-size: 100%;">
+          <div class="background">
+            <h3>WOMEN'S CLOTHING</h3>
+            <p>SHOP NOW</p>
+          </div>
+        </div>
+        <div>
+          <div class="departamento"
+            style="background-image: url(img/woman-s-accessories-red-tulips-table.jpg); background-size: 100%;">
+            <div class="background">
+              <h3>WOMEN'S ACCESORIES</h3>
+              <p>SHOP NOW</p>
+            </div>
+          </div>
+          <div class="departamento" style="background-image: url(img/accesories.jpg); background-size: 100%;">
+            <div class="background">
+              <h3>MEN'S ACCESORIES</h3>
+              <p>SHOP NOW</p>
+            </div>
+          </div>
+        </div>
+        <div id="man" class="departamento"
+          style="background-image: url(img/man_departamento.webp); background-size: 100%;">
+          <div class="background">
+            <h3>MEN'S CLOTHING</h3>
+            <p>SHOP NOW</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="best_products">
+      <h2>Best Selling Products</h2>
+      <div class="parrafo">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ratione omnis earum
+          quae amet consectetur adipisicing reprehenderit voluptatibus vel nostrum.
+        </p>
+      </div>
+      <div class="slider_products">
+        <div class="card card_left">
+          <div class="card_image">
+            <img class="imagecard" alt="imagen compra mujer"
+              src="img/beautiful-woman-with-long-blonde-hair-travelling.jpg">
+          </div>
+          <div class="body_card">
+            <form>
+              <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio5">★</label>
+              </p>
+            </form>
+            <button class="add_cart">ADD TO CART →</button>
+            <div class="card_info">
+              <h3>Light brown jacket</h3>
+              <div class="precios">
+                <span>$110.0</span>
+                <span class="rebaja">$135.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card card_center">
+          <div class="card_image">
+            <img class="imagecard" alt="hombre sentado en una silla" src="img/man_chair.webp">
+          </div>
+          <div class="body_card">
+            <form>
+              <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio5">★</label>
+              </p>
+            </form>
+            <button class="add_cart">ADD TO CART →</button>
+            <div class="card_info">
+              <h3>Light brown jacket</h3>
+              <div class="precios">
+                <span>$110.0</span>
+                <span class="rebaja">$135.0</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="card card_right">
+          <div class="card_image">
+            <img class="imagecard" alt="mujer guapa ropa"
+              src="img/cute-young-girl-with-medium-wavy-hairstyle-modern-makeup-green-silk-dress-black-jacket-stylish-accessories-posing-daylight-street-looking-front.jpg">
+          </div>
+          <div class="body_card">
+            <form>
+              <p class="clasificacion">
+                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                --><label for="radio1">★</label><!--
+                --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                --><label for="radio2">★</label><!--
+                --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                --><label for="radio3">★</label><!--
+                --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                --><label for="radio4">★</label><!--
+                --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                --><label for="radio5">★</label>
+              </p>
+            </form>
+            <button class="add_cart">ADD TO CART →</button>
+            <div class="card_info">
+              <h3>Light brown jacket</h3>
+              <div class="precios">
+                <span>$110.0</span>
+                <span class="rebaja">$135.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="deatils_week" style="background-image: url(img/china.webp);">
+      <div class="details">
+        <span>Hot details of this week</span>
+        <h2>White Shirt And Plaid Skirt</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Officia, quas? Aut deleniti reiciendis sunt sint
+          blanditiis natus.
+        </p>
+        <div class="cuenta_atras">
+          <div>
+            <p class="numero">03</p>
+            <p>DAYS</p>
+          </div>
+          <div>
+            <p class="numero">37</p>
+            <p>HOURS</p>
+          </div>
+          <div>
+            <p class="numero">49</p>
+            <p>MINUTES</p>
+          </div>
+          <div>
+            <p class="numero">18</p>
+            <p>SECONDS</p>
+          </div>
+        </div>
+        <button class="boton_negro">SHOP NOW</button>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <div class="newsletter">
+        <div>
+          <span>Join Our Newsletter</span>
+          <h2>Subscribe to get the latest updates</h2>
+        </div>
+        <form>
+          <input type="text" class="newsletter_input" placeholder="Email Adress">
+          <button class="boton_naranja">Suscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="collection_section">
+      <span class="etiqueta_superior">Explore Our Best Selling items</span>
+      <h2>New Collections</h2>
+      <div class="parrafo">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Quas maiores placeat odit nostrum reiciendis excepturi fugit enim perferendis
+          expedita provident rem, id temporibus adipisci aliquam ut eveniet.
+        </p>
+      </div>
+
+      <nav class="collections_nav">
+        <ul>
+          <li><a class="collection active_collection" href="#">WOMEN'S FASHION</a></li>
+          <li><a class="collection" href="#">MEN'S FASHION</a></li>
+          <li><a class="collection" href="#">KIDS & BABIES</a></li>
+          <li><a class="collection" href="#">ACCESORIES</a></li>
+        </ul>
+      </nav>
+      <div class="grid_collection">
+        <div class="item item1">
+          <div class="card card_product">
+            <div class="card_image">
+              <img class="imagecard" alt="mujer con sombrero"
+                src="img/cheerful-modern-brunette-woman-summer-boho-clothes-straw-hat-posing.jpg">
+            </div>
+            <div class="body_card">
+              <form>
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
+              <div class="card_info">
+                <h3>Light brown jacket</h3>
+                <div class="precios">
+                  <span>$110.0</span>
+                  <span class="rebaja">$135.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item2">
+          <div class="card card_product">
+            <div class="card_image">
+              <img class="imagecard" alt="persona con ropa blanca" src="img/white_clothes.webp">
+            </div>
+            <div class="body_card">
+              <form>
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
+              <div class="card_info">
+                <h3>Light brown jacket</h3>
+                <div class="precios">
+                  <span>$110.0</span>
+                  <span class="rebaja">$135.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item3">
+          <div class="card card_product">
+            <div class="card_image">
+              <img class="imagecard" alt="persona con chaqueta marron" src="img/brown_jacket.webp">
+            </div>
+            <div class="body_card">
+              <form>
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
+              <div class="card_info">
+                <h3>Light brown jacket</h3>
+                <div class="precios">
+                  <span>$110.0</span>
+                  <span class="rebaja">$135.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item4">
+          <div class="card card_product">
+            <div class="card_image">
+              <img class="imagecard" alt="modelo con ropa" src="img/clothes2.jpg">
+            </div>
+            <div class="body_card">
+              <form>
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
+              <div class="card_info">
+                <h3>Light brown jacket</h3>
+                <div class="precios">
+                  <span>$110.0</span>
+                  <span class="rebaja">$135.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item item5">
+          <div class="card card_product">
+            <div class="card_image">
+              <img class="imagecard" alt="modelo con ropa amarilla" src="img/yellow_suit.webp">
+            </div>
+            <div class="body_card">
+              <form>
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
+              <div class="card_info">
+                <h3>Light brown jacket</h3>
+                <div class="precios">
+                  <span>$110.0</span>
+                  <span class="rebaja">$135.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item item6">
+          <div class="card card_product">
+            <div class="card_image">
+              <img class="imagecard" alt="modelo joven con ropa casual" src="img/teengae_clothes.jpg">
+            </div>
+            <div class="body_card">
+              <form>
+                <p class="clasificacion">
+                  <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                  --><label for="radio1">★</label><!--
+                  --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                  --><label for="radio2">★</label><!--
+                  --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                  --><label for="radio3">★</label><!--
+                  --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                  --><label for="radio4">★</label><!--
+                  --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                  --><label for="radio5">★</label>
+                </p>
+              </form>
+              <div class="card_info">
+                <h3>Light brown jacket</h3>
+                <div class="precios">
+                  <span>$110.0</span>
+                  <span class="rebaja">$135.0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="boton">
+        See new Collection
+        <img style="width: 1rem; padding-left: 1rem;" alt="icono de proximo" src="img/icons/proximo.png">
+      </button>
+
+      <audio controls autoplay style="margin-top: 2rem;">
+        <source src="audio/beat.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section class="bloque">
+      <div class="grid_shipping">
+        <div>
+          <img class="shipping_icon" src="img/icons/truck.png" alt="icono de camion">
+          <h2 class="shipping_title">Free Shipping</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+          <p class="salto_linea">
+            Aliquid beatae, consequuntur.
+          </p>
+        </div>
+        <div>
+          <img class="shipping_icon" src="img/icons/money-back.png" alt="icono de garantía">
+          <h2 class="shipping_title">Money Back Guarantee</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+          <p class="salto_linea">
+            Aliquid beatae, consequuntur.
+          </p>
+        </div>
+        <div id="no_border">
+          <img class="shipping_icon" src="img/icons/card.png" alt="icono de tarjeta">
+          <h2 class="shipping_title">Secured Payments</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+          </p>
+          <p class="salto_linea">
+            Aliquid beatae, consequuntur.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer_grid">
+      <section class="columna">
+        <img class="logo_footer" alt="logo" src="img/logo-volupa.png">
+        <p>
+          Praesent sollicitudin aliquam ornare.
+          Suspendisse ornare justo rhoncus dui rutrum,
+          sit amet placerat libero dictum. Nullam consequat augue eros,
+          a aliquet velit egestas vitae. Praesent sollicitudin aliquam ornare.
+          Suspendisse ornare justo rhoncus dui rutrum
+        </p>
+
+        <img class="icon_pay" alt="icono_visa" src="img/icons/visa.png">
+        <img class="icon_pay" alt="icono_maestro" src="img/icons/maestro.png">
+        <img class="icon_pay" alt="icono_paypal" src="img/icons/paypal.png">
+        <img class="icon_pay" alt="icono_payooner" src="img/icons/payooner.png">
+      </section>
+      <section class="columna" style="width: 15rem;">
+        <h2>Contact Us</h2>
+        <ul>
+          <li><a href="#">+703-327-7844</a></li>
+          <li><a href="#">info@volupa.com</a></li>
+          <li>Via Solferino, 7 - 20121 Milano - Italy</li>
+        </ul>
+        <div class="icons_contact">
+          <img class="icon" alt="icono_facebook" src="img/icons/facebook.png">
+          <img class="icon" alt="icono_twitter" src="img/icons/twitter.png">
+          <img class="icon" alt="icono_instagram" src="img/icons/instagram.png">
+          <img class="icon" alt="icono_pinterest" src="img/icons/pinterest.png">
+        </div>
+      </section>
+      <section class="columna">
+        <h2>Usefull Links</h2>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Payment</a></li>
+          <li><a href="#">Shipping Informations</a></li>
+          <li><a href="#">Returns and Refunds</a></li>
+          <li><a href="#">Frequently asked questions</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </section>
+      <section class="columna">
+        <h2> My Account </h2>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Personal Data</a></li>
+          <li><a href="#">Personal Data</a></li>
+          <li><a href="#">Wishlist</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="derechos">
+      <p>All rights reserved - 2022 © VOLUPA</p>
+      <svg height="80" width="200">
+        <text fill="#FFFFFF" font-size="45" font-family="Verdana" x="40" y="50">
+          OJGZ
+        </text>
+      </svg>
+    </div>
+  </footer>
+</body>
+
+</html>

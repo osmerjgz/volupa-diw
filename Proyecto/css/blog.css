@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+
+#posts {
+    font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    font-size: 0.875em;
+    color: #212121;
+    line-height: 1.5;
+}
+
+.wrapper {
+    margin: 3.125em auto;
+    padding: 1em 5em 1em;
+    max-width: 1000px;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+h1 {
+    color: black;
+    font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    text-align: center;
+}
+
+.timeline {
+    line-height: 1.5em;
+    font-size: 14px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    position: relative;
+    counter-reset: section;
+}
+
+.timeline:before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: #f46d4e;
+    position: absolute;
+    top: 0;
+    left: -3.313em;
+    border-radius: 40px 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.resenya {
+    position: relative;
+    background-color: #eeeeee;
+}
+
+.resenya_title {
+    color: white;
+    background-color: black;
+    font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1em;
+}
+
+.resenya_detail {
+    background-color: #dddddd;
+    padding: 1em;
+    margin: 0;
+}
+
+.resenya:before {
+    content: "";
+    font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #ffffff;
+    /*display: -webkit-box;*/
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 3em;
+    height: 3em;
+    background-color: #f46d4e;
+    border: .2em solid white;
+    border-radius: 50%;
+    position: absolute;
+    counter-increment: section;
+    content: counter(section);
+    text-shadow: 0 1px 0 #424242;
+    left: -4.5em;
+}
+
+
+@media (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-gap: 4.75em;
+        grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5";
+    }
+
+    .timeline:before {
+        left: 49.5%;
+    }
+
+    .resenya:nth-child(1) {
+        grid-area: entry1;
+    }
+
+    .resenya:nth-child(2) {
+        grid-area: entry2;
+    }
+
+    .resenya:nth-child(3) {
+        grid-area: entry3;
+    }
+
+    .resenya:nth-child(4) {
+        grid-area: entry4;
+    }
+
+    .resenya:nth-child(5) {
+        grid-area: entry5;
+    }
+
+    .resenya:nth-of-type(odd):before {
+        left: -3.8em;
+    }
+
+    .resenya:nth-of-type(even):not(:nth-of-type(odd)) .resenya_title:before {
+        left: 100%;
+        border-left: 10px solid black;
+        border-right: 0;
+    }
+
+    .resenya:nth-of-type(even):before {
+        left: 103%;
+    }
+}
+
+footer h2 {
+    font-weight: bold;
+}
+
